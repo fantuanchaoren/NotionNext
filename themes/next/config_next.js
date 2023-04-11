@@ -12,7 +12,7 @@ const CONFIG_NEXT = {
   POST_HEADER_IMAGE_VISIBLE: false, // 文章详情页是否显示封面图
 
   // 右侧组件
-  RIGHT_BAR: true, // 是否显示右侧栏
+  RIGHT_BAR: false, // 是否显示右侧栏
   RIGHT_LATEST_POSTS: true, // 右侧栏最新文章
   RIGHT_CATEGORY_LIST: true, // 右侧边栏文章分类列表
   RIGHT_TAG_LIST: true, // 右侧边栏标签分类列表
