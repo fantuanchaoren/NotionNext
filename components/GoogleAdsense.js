@@ -28,15 +28,18 @@ export default function GoogleAdsense () {
   return null
 }
 
-//文章内嵌广告
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6803874334342841"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-6803874334342841"
-     data-ad-slot="4186549915"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
+const AdSlot = ({ type = 'show' }) => {
+  if (!BLOG.ADSENSE_GOOGLE_ID) {
+    return null
+  }
+  // 文章内嵌广告
+  if (type === 'in-article') {
+    return <ins className="adsbygoogle"
+            style={{ display: 'block', textAlign: 'center' }}
+            data-ad-layout="in-article"
+            data-ad-format="fluid"
+            data-adtest={BLOG.ADSENSE_GOOGLE_TEST ? 'on' : 'off'}
+            data-ad-client={BLOG.ADSENSE_GOOGLE_ID}
+            data-ad-slot="4186549915"></ins>
+  }
