@@ -27,3 +27,16 @@ export default function GoogleAdsense () {
   }, [router.events])
   return null
 }
+
+//文章内嵌广告
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6803874334342841"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6803874334342841"
+     data-ad-slot="4186549915"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
