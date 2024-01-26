@@ -14,7 +14,7 @@ const BLOG = {
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || '饭团超人', // 您的昵称 例如 tangly1024
   BIO: process.env.NEXT_PUBLIC_BIO || '日语爱好者/终身学习者/Notion重度使用者', // 作者简介
-  LINK: process.env.NEXT_PUBLIC_LINK || 'https://blog.airtable.top', // 网站地址
+  LINK: process.env.NEXT_PUBLIC_LINK || 'https://blog.panchao.eu.org', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, Blog', // 网站关键词 英文逗号隔开
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
   CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'panchao.jp@gmail.com', // 邮箱地址 例如mail@tangly1024.com
