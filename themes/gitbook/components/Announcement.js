@@ -10,7 +10,7 @@ const Announcement = ({ notice, className }) => {
         <section id='announcement-wrapper' className="dark:text-gray-300 rounded-xl px-2 py-4">
             {/* <div><i className='mr-2 fas fa-bullhorn' />{locale.COMMON.ANNOUNCEMENT}</div> */}
             {notice && (<div id="announcement-content">
-            <NotionPage post={notice} />
+            <NotionPage post={notice} className='text-center' />
         </div>)}
         </section>
     </div>
